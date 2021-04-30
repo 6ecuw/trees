@@ -1,8 +1,8 @@
-type PixelAmount = number
+type PixelsAmount = number
 type DegreesAmount = number
 type Coordinate = number
 
-type Length = PixelAmount
+type Length = PixelsAmount
 type Angle = DegreesAmount
 
 type Point = {

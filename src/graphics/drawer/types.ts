@@ -1,6 +1,7 @@
+
 export type BrushSettings = {
   color?: Color
-  width?: PixelAmount
+  width?: PixelsAmount
 }
 
 export interface Drawer {
