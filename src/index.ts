@@ -1,12 +1,9 @@
 import { container } from './composition'
-import { SystemBuilder } from './l-system'
+import { Drawer } from './graphics/drawer'
 
-const builder = container.get<SystemBuilder>()
+const drawer = container.get<Drawer>()
 
-console.log(
-  builder.build({
-    initiator: '0',
-    iterations: 3,
-    rules: { '1': '11', '0': '1[0]0' },
-  })
-)
+drawer.drawLine({
+  start: { x: 0, y: 0 },
+  end: { x: 100, y: 100 },
+})
